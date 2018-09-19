@@ -3,15 +3,18 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import { store, persistor } from 'store';
-import SignIn from 'views/signIn';
-// import Routes from './routes';
+import Routes from './routes';
 
 export default class App extends PureComponent {
+  nothing = () => {
+    // nothing
+  };
+
   render() {
     return (
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-          <SignIn />
+          <Routes />
         </PersistGate>
       </Provider>
     );

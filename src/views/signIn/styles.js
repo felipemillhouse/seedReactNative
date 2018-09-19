@@ -16,7 +16,6 @@ const ViewContainer = styled.View`
 `;
 const PaperText = styled(Title)`
   color: ${theme.colors.primary};
-  font-family: ${theme.fonts.thin};
 `;
 
 export { Container, ViewContainer, PaperText };
