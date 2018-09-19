@@ -1,28 +1,19 @@
-import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import React, { PureComponent } from 'react';
+import { Text } from 'react-native';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
-type Props = {};
-export default class App extends Component<Props> {
+import { store, persistor } from 'store';
+// import Routes from './routes';
+
+export default class App extends PureComponent {
   render() {
-    return <View style={styles.container} />;
+    return (
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <Text>Test</Text>
+        </PersistGate>
+      </Provider>
+    );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
