@@ -31,7 +31,7 @@ class SignIn extends Component {
               />
               <ViewContainer>
                 <Container>
-                  <PaperText>SignInScreen1</PaperText>
+                  <PaperText>SignInScreen</PaperText>
                 </Container>
               </ViewContainer>
             </SafeAreaView>
