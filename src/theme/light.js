@@ -26,10 +26,11 @@ const standard = {
     border: '#cacaca',
   },
   fonts: {
+    thin: 'Roboto-Light',
+    light: 'Roboto-Light',
     regular: 'Roboto-Regular',
     medium: 'Roboto-Medium',
-    light: 'Roboto-Light',
-    thin: 'Roboto-Light',
+    bold: 'Roboto-Bold',
   },
   size: {
     h0: scale(32),
