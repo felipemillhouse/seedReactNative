@@ -7,7 +7,7 @@ import Routes from './routes';
 
 export default class App extends PureComponent {
   nothing = () => {
-    // nothing
+    // nothing 
   };
 
   render() {
